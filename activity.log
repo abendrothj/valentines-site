@@ -1,0 +1,4 @@
+2025-02-10: Configured Next.js for GitHub Pages deployment
+- Updated next.config.mjs: added output: 'export', basePath: '/valentines-site', images.unoptimized: true
+- Created .nojekyll file to prevent Jekyll from ignoring _next folder
+- Next steps: Set GitHub Pages source to GitHub Actions, add workflow that builds and deploys from out/ folder
