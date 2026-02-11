@@ -22,3 +22,5 @@ Exports static HTML to `out/`.
 ## Deploy
 
 Pushes to `main` deploy via GitHub Actions to GitHub Pages. Ensure **Settings → Pages → Source** is set to **GitHub Actions**.
+
+**To serve at root (`/`):** Deploy this repo’s contents to a `username.github.io` user-site repo. A project repo like `valentines-site` will always be at `username.github.io/valentines-site/`.
