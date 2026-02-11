@@ -2,9 +2,9 @@
 
 import { useState, useEffect } from "react"
 import { Heart } from "lucide-react"
+import { DOG_IMAGE_DATA_URL } from "@/lib/dog-image"
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ""
-const DOG_SRC = `${basePath}/dog.webp`
+const DOG_SRC = DOG_IMAGE_DATA_URL
 
 const PLEADING_MESSAGES = [
   "Will you be my Valentine?",
