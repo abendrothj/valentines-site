@@ -2,3 +2,8 @@
 - Updated next.config.mjs: added output: 'export', basePath: '/valentines-site', images.unoptimized: true
 - Created .nojekyll file to prevent Jekyll from ignoring _next folder
 - Next steps: Set GitHub Pages source to GitHub Actions, add workflow that builds and deploys from out/ folder
+
+2025-02-10: Added GitHub Actions workflow (was missing - this caused dynamic build)
+- Created .github/workflows/deploy.yml: runs pnpm build (static export) and deploys out/ via actions/deploy-pages
+- Workflow copies .nojekyll into out/ before upload so _next folder is served
+- Must set GitHub Settings > Pages > Source = GitHub Actions (and create github-pages environment if prompted)
