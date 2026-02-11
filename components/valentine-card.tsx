@@ -3,7 +3,8 @@
 import { useState, useEffect } from "react"
 import { Heart } from "lucide-react"
 
-const DOG_SRC = "/dog.webp"
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ""
+const DOG_SRC = `${basePath}/dog.webp`
 
 const PLEADING_MESSAGES = [
   "Will you be my Valentine?",
